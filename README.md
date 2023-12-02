@@ -19,6 +19,8 @@ The dataset is from Kaggle [1] and has over 15,000 samples of employee data with
 - Affiliated department
 - Salary levels (low, medium, high)
 
+Dataset Preview:
+![data screenshot](./graph/Sample_Data.PNG)
 
 ## Methodology
 
