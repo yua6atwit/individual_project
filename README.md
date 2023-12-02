@@ -22,7 +22,19 @@ The dataset is from Kaggle [1] and has over 15,000 samples of employee data with
 Dataset Preview:
 ![data screenshot](./graph/Sample_Data.PNG)
 
-## Methodology
+Out of 15787 samples, 788 samples in all 9 columns were missing data:
+![data screenshot](./graph/data_cleaning.PNG)
+Thus, there were remove because this section contained no data and would not alter the results.
+
+## Methods
+Tools: 
+- Numpy and Pandas for data analysis
+- Matplotlib for data visualization
+
+Methods used with Matplotlib:
+Scatterplots are frequently used to show a correlation between two variables where each individual data is ploted on the graph. Both variables are assumed to be numeric to be able to plot it on the graph. 
+
+In cases where one variable is not a numeric value and another variable is a numeric value, a box plot will be used to compare the values within the data. A box plot can show the distribution within a category and allow for comparisons between each category. 
 
 ## References
 [1] [Zakari. “Employee Satisfaction Survey Data.” Kaggle, 3 Nov. 2023, www.kaggle.com/datasets/redpen12/employees-satisfaction-analysis?select=Employee%2BAttrition.csv.]
