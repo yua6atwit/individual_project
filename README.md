@@ -1,40 +1,44 @@
-# Employee Satisfaction Data Analysis
+# Boston Crime Data Analysis
 
 ## Introduction
-Employee satifaction involves the content an employee feels in their work and is important for organizations and employers. It is difficult to maintain employee retention as employees are less likely to stay in a company if they aren't satisfied with their work. The objective of this project is to determine what factors can influence employee satisfaction. This information can be used to improve the work environment, leading to better performance, retention, and productivity from employees. In this project, these factors will be analyized to determine if there is a correlation between these and employee satisfaction.
-  - Number of hours worked per month
-  - Salary level and performance
-  - Promotion and work accidents
+Criminal activity can happen anywhere and anytime. It is not only important for residents to know to avoid areas where criminal activity is high, but also for people planning to move to a different district to understand the possibility of crimes in that area. Police can also use this information to prevent criminal activity. In this project, I will be analyizing trends and areas at a higher risk of criminal activity.
+  1. Which (top 10) districts are crimes most likely to occure?
+  2. Does the number of crimes decrease or increase depending on the month? Day of the week?
+  3. What are the top 10 most common crimes?
 
 ## Data Selection
-The dataset is from Kaggle [1] and has over 15,000 samples of employee data with 9 columns: 
-- Employee ID
-- Self-reported satisfaction levels between 0 and 1
-- Recent performance evaluation between 0 and 1
-- Number of projects an employee is currently working on
-- Average number hours worked per month
-- Number of years spent in the company
-- Work accidents
-- Promotions within the last 5 years
-- Affiliated department
-- Salary levels (low, medium, high)
+The dataset is from Kaggle [1] and has 2 datasets: 
+One has the name of the specific crime and the offense code.
+The other has over 300,000 rows of crimes in Boston with 17 columns:
+- Incident Number
+- Offense Code
+- Offense Code Group (name of crime group)
+- Offense Description
+- District
+- Reporting Area
+- Shooting
+- Occured On Date
+- Year
+- Month
+- Day Of The Week
+- Hour (0 to 23)
+- UCR Part
+- Street
+- Latitude
+- Longitude
+- Location
 
-Dataset Preview:
-![data screenshot](./graph/Sample_Data.PNG)
+In the column for districts 1,765 rows are missing data and will be filled with the median.
 
-Out of 15787 samples, 788 samples in all 9 columns were missing data:
-![data screenshot](./graph/data_cleaning.PNG)
-Thus, there were remove because this section contained no data and would not alter the results.
 
 ## Methods
 Tools: 
 - Numpy and Pandas for data analysis
 - Matplotlib for data visualization
-
+ 
 Methods used with Matplotlib:
-Scatterplots and histograms are frequently used to show a correlation between two variables where each individual data is ploted on the graph. Both variables are assumed to be numeric to be able to plot it on the graph. Thus, scatterplots and histograms will be used to determine if there is a correlation.
+- Bar graphs are useful for comparing different groups or to determine changes over time. Typically one axis show the groups and another shows the numeric value.
 
-In cases where one variable is not a numeric value and another variable is a numeric value, a box plot will be used to compare the values within the data. A box plot can show the distribution within a category and allow for comparisons between each category. 
 
 ## References
 [1] [Zakari. “Employee Satisfaction Survey Data.” Kaggle, 3 Nov. 2023, www.kaggle.com/datasets/redpen12/employees-satisfaction-analysis?select=Employee%2BAttrition.csv.]
