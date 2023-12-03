@@ -32,7 +32,7 @@ Tools:
 - Matplotlib for data visualization
 
 Methods used with Matplotlib:
-Scatterplots are frequently used to show a correlation between two variables where each individual data is ploted on the graph. Both variables are assumed to be numeric to be able to plot it on the graph. 
+Scatterplots and histograms are frequently used to show a correlation between two variables where each individual data is ploted on the graph. Both variables are assumed to be numeric to be able to plot it on the graph. Thus, scatterplots and histograms will be used to determine if there is a correlation.
 
 In cases where one variable is not a numeric value and another variable is a numeric value, a box plot will be used to compare the values within the data. A box plot can show the distribution within a category and allow for comparisons between each category. 
 
