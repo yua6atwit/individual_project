@@ -28,7 +28,7 @@ The other has over 300,000 rows of crimes in Boston with 17 columns:
 - Longitude
 - Location
 
-In the column for districts 1,765 rows are missing data and will be filled with the median.
+In the column for districts 1,765 rows are missing data. This will be filled in with the median because there may be outliers that may skew the data.
 
 
 ## Methods
@@ -41,4 +41,3 @@ Methods used with Matplotlib:
 
 
 ## References
-[1] [Zakari. “Employee Satisfaction Survey Data.” Kaggle, 3 Nov. 2023, www.kaggle.com/datasets/redpen12/employees-satisfaction-analysis?select=Employee%2BAttrition.csv.]
