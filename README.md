@@ -30,8 +30,14 @@ The other has over 300,000 rows of crimes in Boston with 17 columns:
 Data Preview:
 ![data screenshot](graph/Sample_Data.PNG)
 
-In the column for districts 1,765 rows are missing data. Instead of dropping this data, it will be filled with 0 to represent an unknown district to account for any data loss.
+In the column for districts 1,765 rows are missing data.
+Code to show missing data:
+![data screenshot](graph/Check_Data.PNG)
 
+Since one of the used data has some missing data, only the district column needs to be modified.
+Instead of dropping this data, it will be filled with 0 to represent an unknown district to account for any data loss in analyzing the data.
+Code to fill missing data:
+![data screenshot](graph/Missing_data.PNG)
 
 ## Methods
 Tools: 
@@ -39,38 +45,47 @@ Tools:
 - Matplotlib for data visualization
 
 Methods used with Numpy
-- Functions: array, sum 
+- Functions for analyzing include: array(), arange(), etc.
+- Numpy has many useful tools for handling data such as it's arrays and scientific functions that work with arrays.  
 
 Methods used with Pandas
-- Functions: DataFrames, Series
+- Functions include: DataFrame(), read_csv(), etc.
+- Pandas has many functions for reading, analyzing, cleaning, and manipulating data and is often used for data analysis.
+- One of the most used functions in this project is Dataframes:
+  - Dataframes allow for easy storage, analysis, and manipulation of data
+  - Has functions to sort the data by column, count the number of specific rows and other useful tools
+  - Was used to clean the data, and prepare the data for visualiztion
  
 Methods used with Matplotlib:
-- Functions: pyplot
+- Functions include: pyplot, pyplot.subplots(), bar(), barh(), etc.
+- Matplotlib allows creation of multiple types of plots for data visualiztion
+  - Has useful tools to label, format, and resize the plots
 - Bar graphs are useful for comparing different groups or to determine changes over time. Typically one axis show the groups and another shows the numeric value.
 
-## Results
-1. Which (top 10) districts are crimes most likely to occur?
-The data had 12 districts including the unknown district which was labeled 0. Only the top 10 were used for the bar graph:
+## Results 
+1. Which (top 10) districts are crimes most likely to occur? <br>
+The data had 12 districts including the unknown district which was labeled 0. <br>
+Only the top 10 were used in the bar graph:
 ![data screenshot](graph/Top_10_districts.png)
-District B2 had the most crimes occurring in the span of 3 years with almost 50,000 crimes. The top 3 districts ranged between 50,000 and 40,000 while lowest in the graph ranged between 10,000 to 20,000. The two districts (A15, 0) not on the graph had lower than 10,000 crimes recorded. 
+District B2 had the most crimes occurring in the span of 3 years with almost 50,000 crimes. The top 3 districts ranged between 50,000 and 40,000 while lowest in the graph ranged between 10,000 to 20,000. The two districts (A15, 0) not on the graph had lower than 10,000 crimes recorded.
 
-
-3. Does the number of crimes decrease or increase depending on the month? Day of the week?
-Because the data stops on September 3, 2018, the data in these bar graphs is missing half the data from the year 2018 and may be skewed.
-Interesting, there was not a noticeably large gap between the crimes occuring per day of the week.
-Bar Graph:
+2. Does the number of crimes decrease or increase depending on the month? Day of the week? <br>
+Because the data stops on September 3, 2018, the data in these bar graphs is missing half of the data from the year 2018 and may be skewed. <br>
+Crimes per week:
 ![data screenshot](graph/Crimes_per_Week.png)
-They all ranged in the 40,0000 to 50,000 number of crimes with Sunday having the lowest number of crimes.
-In the crimes per month:
+Interestingly, they all ranged in the 40,0000 to 50,000 number of incidents with Sunday having the lowest number. <br><br>
+Crimes per month:
 ![data screenshot](graph/Crimes_per_Month.png)
 There is a noticeable gap between the first few months of the year and June to August. Since only the months after August are affected by the incomplete dataset, the months before it are not affected and is not skewed. 
 
-5. What are the top 10 most common crimes?
+3. What are the top 10 most common crimes? <br>
 There were 222 different types of offense codes in the dataset and the top 10 common crimes are shown:
 ![data screenshot](graph/Top_10_Crimes.png)
-In those 3 years, there were more crimes relating to a sick/injured person and investigating a person.
+In the 3 years, there were more crimes relating to a sick/injured person and investigating a person. The top 7 crimes ranged from 20,000 to 11,000 incidents and the lowest number of incidents was about 9,000. 
 
 ## Discussion
+
+
 
 ## References
 [1] [Boston, Analyze. “Crimes in Boston.” Kaggle, 4 Sept. 2018, www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston.] 
