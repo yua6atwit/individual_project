@@ -84,8 +84,9 @@ There were 222 different types of offense codes in the dataset and the top 10 co
 In the 3 years, there were more crimes relating to a sick/injured person and investigating a person. The top 7 crimes ranged from 20,000 to 11,000 incidents and the lowest number of incidents was about 9,000. 
 
 ## Discussion
+The top 10 most districts had about 132,000 crimes in 3 districts. This implies that about one third of the crimes occur within the districts: B3, C11, and D4. People should try to avoid these districts and those who need to go there should be aware that there are frequent crimes in the area. The number of incidents per day of the week seems to show slight decreases for Sunday but could be more accurate if the dataset had all the records for the last year. The number of incidents per month seems to peek in July and August, and the top 10 most common crimes shows some of the most common crimes happening within Boston which people should watch out for. These trends could be important for people to plan their outings and be aware of criminal activity. 
 
-
+For future analysis, furthur caterigorization of the data could be useful in determining which types of incidents occur the most depending on the district so that people in those areas know the specific crimes happening there. This could be done for each question to get a better understanding of criminal activity and the severity of the crimes in these districts. While there may be more crimes in certain districts, not all of them are felonies and many could be a misdemeanor. A yearly catergory could also be added to sort the data and determine changes over the years. As 3 years may not show a significant change, updating the dataset to include recent years could help in finding a pattern.
 
 ## References
 [1] [Boston, Analyze. “Crimes in Boston.” Kaggle, 4 Sept. 2018, www.kaggle.com/datasets/AnalyzeBoston/crimes-in-boston.] 
