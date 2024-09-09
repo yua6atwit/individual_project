@@ -1,7 +1,7 @@
 # Boston Crime Data Analysis
 
 ## Introduction
-Criminal activity can happen anywhere and anytime. It is not only important for residents to know to avoid areas where criminal activity is high, but also for people planning to move to a different district to understand the possibility of crimes in that area. Police can also use this information to prevent criminal activity. In this project, I will be analyizing trends and determining areas at a higher risk of criminal activity.
+Criminal activity can happen anywhere and anytime. It is not only important for residents to know to avoid areas where criminal activity is high, but also for people planning to move to a different district to understand the possibility of crimes in that area. Police can also use this information to prevent criminal activity. In this project, trends will be analyized and areas at a higher risk of criminal activity will be determined.
   1. Which (top 10) districts are crimes most likely to occur?
   2. Does the number of crimes decrease or increase depending on the month? Day of the week?
   3. What are the top 10 most common crimes?
